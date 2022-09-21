@@ -12,10 +12,10 @@ class TwitterClient(object):
         Class constructor or initialization method.
         '''
        
-        consumer_key = 'XXXXXXXXXXXX'
-        consumer_secret = 'XXXXXXXXXXXX'
-        access_token = 'XXXXXXXXXXXX'
-        access_token_secret = 'XXXXXXXXXXXX'
+        consumer_key = 'l0iVR40pFAIOcqm8blReC4Wcm'
+        consumer_secret = 'IoM4FlmsHLVHCxdUcML1ahoY4SvlNvW8IVaO1eZviih5t1abwA'
+        access_token = '1572367852073541632-RD40ndXndPCGNUalgfdFNlniX1ZTY2'
+        access_token_secret = 'aO9gdKTTG3Qn21un5L7RrTYSVizYY9HxZ3WJmvyIssKgt'
  
        
         try:
@@ -59,7 +59,7 @@ class TwitterClient(object):
  
         try:
           
-            fetched_tweets = self.api.search(q = query, count = count)
+            fetched_tweets = self.api.search_tweets(q = query, count = count)
  
            
             for tweet in fetched_tweets:
